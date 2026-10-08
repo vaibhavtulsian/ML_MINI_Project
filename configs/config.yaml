@@ -1,0 +1,32 @@
+data:
+  raw_path: "data/raw/InputData.csv"
+  processed_path: "data/processed/"
+  
+models:
+  saved_weights_dir: "models/saved_weights/"
+  
+outputs:
+  figures_dir: "outputs/figures/"
+  
+training:
+  random_seed: 42
+  cv_folds: 5
+  n_jobs: -1
+  
+features:
+  - "Age"
+  - "Gender"
+  - "Has_Pneumonia"
+  - "Has_Diabetes"
+  - "Has_COPD"
+  - "Has_Asthma"
+  - "Is_Immunosuppressed"
+  - "Has_Hypertension"
+  - "Has_Cardiovascular"
+  - "Is_Smoker"
+  - "Is_Obese"
+
+targets:
+  - "Admitted_ICU"
+  - "Is_Intubated"
+  - "Is_Deceased"
